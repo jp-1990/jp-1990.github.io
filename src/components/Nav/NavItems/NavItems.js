@@ -2,9 +2,9 @@ import React from 'react';
 import NavItem from './NavItem/NavItem';
 import classes from './NavItems.module.css';
 
-const navItems = () => {
+const navItems = (props) => {
   return (
-    <ul className={classes.NavItems}>
+    <ul className={props.styles || classes.NavItems}>
       <NavItem>About</NavItem>
       <NavItem>Projects</NavItem>
       <NavItem>Skills</NavItem>
