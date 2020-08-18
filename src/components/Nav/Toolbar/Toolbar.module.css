@@ -1,0 +1,12 @@
+.Toolbar {
+  display: flex;
+  border: 1px solid black;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+nav {
+  width: 70%;
+}

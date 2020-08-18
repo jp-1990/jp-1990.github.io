@@ -1,8 +1,15 @@
 import React from 'react';
-import './App.css';
+import Layout from './components/Layout/Layout';
 
 const App = () => {
-  return <div className='App'>Hello world</div>;
+  return (
+    <Layout>
+      <div>HERO</div>
+      <div>PROJECTS</div>
+      <div>ABOUT</div>
+      <div>SKILLS</div>
+    </Layout>
+  );
 };
 
 export default App;

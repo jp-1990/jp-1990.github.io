@@ -1,0 +1,12 @@
+.NavItem {
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 2rem;
+}
+
+.NavItem a,
+.NavItem a:visited,
+.NavItem a:active {
+  text-decoration: none;
+  color: white;
+}
