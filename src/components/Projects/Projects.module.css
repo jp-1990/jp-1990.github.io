@@ -1,48 +1,40 @@
-.Title {
+.Projects {
+  background-color: #f7f7f7;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
-}
-
-.h1,
-.h2 {
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
 }
 
 .h1 {
-  font-size: 6rem;
-}
-
-.h2 {
-  font-size: 3rem;
   position: relative;
+  font-size: 3rem;
+  margin: 80px 0;
+  font-weight: 300;
 }
 
-.h2::after {
+.h1::after {
   content: ' ';
   display: block;
   position: absolute;
-  height: 5px;
+  height: 3px;
   background: black;
-  width: 170px;
-  left: 110%;
+  width: 120px;
+  left: 120%;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 10px;
+  border-radius: 5px;
 }
-.h2::before {
+.h1::before {
   content: ' ';
   display: block;
   position: absolute;
-  height: 5px;
+  height: 3px;
   background: black;
-  width: 170px;
-  right: 110%;
+  width: 120px;
+  right: 120%;
   top: 50%;
   transform: translateY(-50%);
-  border-radius: 10px;
+  border-radius: 5px;
 }

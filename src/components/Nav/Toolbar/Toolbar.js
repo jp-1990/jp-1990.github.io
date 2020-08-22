@@ -8,8 +8,7 @@ const Toolbar = () => {
   useEffect(() => {
     let result;
     window.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 57;
-      console.log(window.pageYOffset);
+      const isTop = window.scrollY < 520;
 
       if (isTop !== true) {
         result = true;
@@ -17,7 +16,6 @@ const Toolbar = () => {
         result = false;
       }
       setScrolled(result);
-      console.log(scrolled);
     });
     return () => {};
   }, [scrolled]);

@@ -1,0 +1,44 @@
+.Text {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Text h2 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.Text p {
+  width: 80%;
+  padding-top: 20px;
+  font-size: 1.1rem;
+  line-height: 150%;
+  word-spacing: 0.1rem;
+}
+
+.Buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.Buttons button {
+  color: white;
+  background-color: #00a3ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 6px 12px;
+  margin: 0 15px;
+}
+
+.Buttons a {
+  text-decoration: none;
+  color: white;
+}
