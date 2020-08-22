@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import NavItems from '../NavItems/NavItems';
 import classes from './Toolbar.module.css';
 
-const toolbar = () => {
+const Toolbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    let result;
+    window.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 57;
+      console.log(window.pageYOffset);
+
+      if (isTop !== true) {
+        result = true;
+      } else {
+        result = false;
+      }
+      setScrolled(result);
+      console.log(scrolled);
+    });
+    return () => {};
+  }, [scrolled]);
+
   return (
     <header>
-      <div className={classes.Toolbar}>
+      <div className={scrolled ? classes.Toolbar : classes.Hide}>
         <nav>
           <NavItems />
         </nav>
@@ -14,4 +33,4 @@ const toolbar = () => {
   );
 };
 
-export default toolbar;
+export default Toolbar;
