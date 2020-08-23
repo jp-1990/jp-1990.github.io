@@ -6,7 +6,9 @@ import classes from './Hero.module.css';
 
 const hero = () => {
   return (
-    <div className={classes.Hero}>
+    <div className={classes.Underlay}>
+      <div className={classes.Hero}></div>
+
       <Title />
       <HeroNav />
     </div>

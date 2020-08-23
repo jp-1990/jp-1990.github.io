@@ -4,6 +4,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.664);
+  background: rgba(22, 22, 22, 0.808);
+  padding: 50px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.541);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.623);
 }
 
 .h1,
@@ -27,22 +38,24 @@
   display: block;
   position: absolute;
   height: 5px;
-  background: black;
+  background: white;
   width: 170px;
   left: 110%;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.623);
 }
 .h2::before {
   content: ' ';
   display: block;
   position: absolute;
   height: 5px;
-  background: black;
+  background: white;
   width: 170px;
   right: 110%;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.623);
 }
