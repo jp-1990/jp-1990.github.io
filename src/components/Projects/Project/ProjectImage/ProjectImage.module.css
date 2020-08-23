@@ -30,7 +30,7 @@
 }
 
 .Image ul li {
-  text-shadow: 1px 1px 4px rgb(143, 143, 143);
+  text-shadow: 1px 1px 1px rgba(143, 143, 143, 0.452);
 }
 
 .Image ul.L li {
