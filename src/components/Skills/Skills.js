@@ -2,9 +2,9 @@ import React from 'react';
 import Logos from './Logos/Logos';
 import classes from './Skills.module.css';
 
-const skills = () => {
+const skills = (props) => {
   return (
-    <div className={classes.Skills}>
+    <div id={props.id} className={classes.Skills}>
       <h1 className={classes.h1}>Skills</h1>
       <p className={classes.Overview}>
         Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut

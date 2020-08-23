@@ -3,7 +3,7 @@ import Project from './Project/Project';
 import classes from './Projects.module.css';
 import taskTrackerImg from '../../assets/images/tasktracker.png';
 
-const projects = () => {
+const projects = (props) => {
   const projectsArray = [
     {
       title: 'Task Tracker',
@@ -58,7 +58,7 @@ const projects = () => {
   });
 
   return (
-    <div className={classes.Projects}>
+    <div id={props.id} className={classes.Projects}>
       <h1 className={classes.h1}>PROJECTS</h1>
       {displayProjects}
     </div>

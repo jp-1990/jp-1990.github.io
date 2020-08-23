@@ -1,13 +1,15 @@
 import React from 'react';
 import Toolbar from '../Nav/Toolbar/Toolbar';
+import Footer from '../Footer/Footer';
 
-const layout = (props) => {
+const Layout = (props) => {
   return (
     <>
       <Toolbar />
-      <main>{props.children}</main>
+      {props.children}
+      <Footer />
     </>
   );
 };
 
-export default layout;
+export default Layout;

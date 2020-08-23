@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './About.module.css';
 
-const about = () => {
+const about = (props) => {
   return (
-    <div className={classes.About}>
+    <div id={props.id} className={classes.About}>
       <h1 className={classes.h1}>About</h1>
       <p className={classes.Overview}>
         Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut

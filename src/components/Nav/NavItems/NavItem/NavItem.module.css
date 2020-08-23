@@ -1,12 +1,29 @@
 .NavItem {
   display: inline-block;
+  padding: 0;
   margin: 0px 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.NavItem a,
-.NavItem a:visited,
-.NavItem a:active {
+.NavItem p {
+  margin: 12px 0 5px 0;
+  padding: 0 0 3px 0;
   text-decoration: none;
   color: white;
+  font-weight: 300;
+}
+
+.NavItem p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.JPlummer {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-style: italic;
+  font-size: 2rem !important;
+}
+
+.JPlummer:hover {
+  border: none !important;
 }
