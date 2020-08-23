@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from './Project/Project';
 import classes from './Projects.module.css';
+import taskTrackerImg from '../../assets/images/tasktracker.png';
 
 const projects = () => {
   const projectsArray = [
@@ -16,7 +17,7 @@ const projects = () => {
         'express',
         'mongodb',
       ],
-      image: null,
+      image: taskTrackerImg,
     },
     {
       title: 'Placeholder test',

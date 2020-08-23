@@ -2,6 +2,9 @@
   position: relative;
   width: 50%;
   height: 100%;
+  background-color: rgb(204, 204, 204);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
 }
 
 .Image ul {
@@ -9,14 +12,25 @@
   transform: translateY(-50%);
   position: absolute;
   padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.651);
+  border: 1px solid rgba(0, 0, 0, 0.171);
 }
 
 .Image ul.L {
   right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .Image ul.R {
   left: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.Image ul li {
+  text-shadow: 1px 1px 4px rgb(143, 143, 143);
 }
 
 .Image ul.L li {
@@ -24,17 +38,19 @@
   text-align: right;
   background: rgb(0, 71, 131);
   background: linear-gradient(
-    200deg,
-    rgba(0, 71, 131, 1) 0%,
-    rgba(13, 90, 230, 1) 18%,
-    rgba(0, 212, 255, 1) 100%
+    0deg,
+    rgba(109, 109, 109, 0.514) 0%,
+    rgb(235, 235, 235) 10%,
+    rgb(197, 197, 197) 100%
   );
   margin: 15px 10px;
   padding: 5px 15px;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.466);
   border-radius: 10px;
-  box-shadow: 0 0 5px white;
+  border-right: 1px solid rgb(116, 116, 116);
+  box-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
 .Image ul.R li {
@@ -42,21 +58,23 @@
   text-align: left;
   background: rgb(0, 71, 131);
   background: linear-gradient(
-    160deg,
-    rgba(0, 71, 131, 1) 0%,
-    rgba(13, 90, 230, 1) 18%,
-    rgba(0, 212, 255, 1) 100%
+    0deg,
+    rgba(109, 109, 109, 0.514) 0%,
+    rgb(235, 235, 235) 10%,
+    rgb(197, 197, 197) 100%
   );
   margin: 15px 10px;
   padding: 5px 15px;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.466);
   border-radius: 10px;
-  box-shadow: 0 0 5px white;
+  border-left: 1px solid rgb(116, 116, 116);
+  box-shadow: 0 0 2px rgb(0, 0, 0);
 }
 
-.Img {
-  background-color: grey;
+.Image img {
+  opacity: 0.98;
   border-radius: 5px;
   width: 100%;
   height: 100%;

@@ -9,13 +9,23 @@ const project = (props) => {
     output = (
       <div className={classes.ProjectL}>
         <ProjectText details={props} />
-        <ProjectImage side={props.side} />
+        <ProjectImage
+          side={props.side}
+          tech={props.technologies}
+          image={props.image}
+          title={props.title}
+        />
       </div>
     );
   } else {
     output = (
       <div className={classes.ProjectR}>
-        <ProjectImage side={props.side} />
+        <ProjectImage
+          side={props.side}
+          tech={props.technologies}
+          image={props.image}
+          title={props.title}
+        />
         <ProjectText details={props} />
       </div>
     );
