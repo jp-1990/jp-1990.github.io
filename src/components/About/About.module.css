@@ -16,7 +16,7 @@
   text-shadow: 1px 1px 2px rgb(97, 97, 97);
 }
 
-.h1::after {
+/* .h1::after {
   content: ' ';
   display: block;
   position: absolute;
@@ -39,7 +39,7 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 5px;
-}
+} */
 
 .About .Overview {
   width: 50%;
@@ -53,15 +53,14 @@
 
 .Section {
   display: flex;
-  width: 55%;
   margin: 10px 0px;
   color: rgb(53, 53, 53);
   text-shadow: 1px 1px 1px rgba(182, 182, 182, 0.562);
 }
 
 .Image {
-  height: 200px;
-  min-width: 200px;
+  height: 50px;
+  width: 50px;
   border: 1px solid black;
   border-radius: 50%;
   margin: 20px;

@@ -16,7 +16,7 @@
   text-shadow: 1px 1px 2px rgb(97, 97, 97);
 }
 
-.h1::after {
+/* .h1::after {
   content: ' ';
   display: block;
   position: absolute;
@@ -39,7 +39,7 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 5px;
-}
+} */
 
 .Skills .Overview {
   width: 50%;
