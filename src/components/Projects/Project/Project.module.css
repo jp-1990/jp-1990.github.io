@@ -25,3 +25,34 @@
   margin: 0px 0;
   border-radius: 5px;
 }
+
+@media screen and (min-width: 1025px) {
+  .ProjectL {
+    flex-direction: row;
+    padding: 10px 5px 10px 5px;
+    max-width: 1300px;
+    height: 400px;
+    margin: 20px 0;
+  }
+
+  .ProjectR {
+    flex-direction: row;
+    padding: 10px 5px 10px 5px;
+    max-width: 1300px;
+    height: 400px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .ProjectL {
+    max-width: 1600px;
+    height: 500px;
+    font-size: 1.5rem;
+  }
+  .ProjectR {
+    max-width: 1600px;
+    height: 500px;
+    font-size: 1.5rem;
+  }
+}

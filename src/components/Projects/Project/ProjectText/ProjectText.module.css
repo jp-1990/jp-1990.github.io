@@ -20,7 +20,8 @@
 
 .Text p {
   width: 80%;
-  padding: 185px 0 50px 0;
+  padding-bottom: 50px;
+  padding-top: calc(45% + 50px);
   font-size: 1.1rem;
   line-height: 150%;
   word-spacing: 0.1rem;
@@ -54,4 +55,51 @@
 .Buttons a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (min-width: 426px) {
+  .Text {
+    width: 80%;
+  }
+
+  .Buttons button {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Text {
+    width: 40%;
+  }
+
+  .Text p {
+    padding: 10px 0 60px 0;
+    width: 90%;
+  }
+
+  .Buttons {
+    bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Text {
+    width: 50%;
+  }
+
+  .Text p {
+    padding: 30px 0 60px 0;
+    margin: 0;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .Text p {
+    font-size: 1.5rem;
+  }
+
+  .Buttons button {
+    font-size: 2rem;
+  }
 }
