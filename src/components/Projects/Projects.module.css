@@ -5,18 +5,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .h1 {
   position: relative;
   font-size: 3rem;
-  margin: 80px 0 60px 0;
+  margin: 30px 0;
   font-weight: 300;
   text-shadow: 1px 1px 2px rgb(97, 97, 97);
+  border-bottom: 3px solid rgba(54, 54, 54, 0.39);
+  padding: 0 0 10px 0;
 }
 
-.h1::after {
+/* .h1::after {
   content: ' ';
   display: block;
   position: absolute;
@@ -39,4 +41,4 @@
   top: 50%;
   transform: translateY(-50%);
   border-radius: 5px;
-}
+} */
