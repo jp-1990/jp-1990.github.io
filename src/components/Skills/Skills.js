@@ -5,7 +5,7 @@ import classes from './Skills.module.css';
 const skills = (props) => {
   return (
     <div id={props.id} className={classes.Skills}>
-      <h1 className={classes.h1}>Skills</h1>
+      <h1 className={classes.h1}>SKILLS</h1>
       <p className={classes.Overview}>
         Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
         fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
