@@ -1,5 +1,5 @@
 .Projects {
-  background-color: #f7f7f7;
+  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,7 @@
 @media screen and (min-width: 1025px) {
   .Projects {
     padding: 20px 0;
+    background-color: #f7f7f7;
   }
 
   .h1 {
