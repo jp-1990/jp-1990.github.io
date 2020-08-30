@@ -2,6 +2,51 @@
   display: inline-block;
 }
 
+.HeroNavItem {
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.HeroNavItem p {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.HeroNavItem p:hover {
+  cursor: pointer;
+}
+
+.HeroNavItem p::before {
+  position: absolute;
+  display: block;
+  content: ' ';
+  background-color: rgba(255, 255, 255, 0.747);
+  height: 3px;
+  width: 15px;
+  top: 50%;
+  left: -20px;
+}
+
+.HeroNavItem .PROJECTS::before {
+  left: 20px;
+}
+
+.HeroNavItem .SKILLS::before {
+  left: 60px;
+}
+
+.HeroNavItem .PROJECTS {
+  padding-left: 50px;
+}
+
+.HeroNavItem .SKILLS {
+  padding-left: 90px;
+}
+
 .NavItem p {
   margin: 0;
   padding: 25px 0;
@@ -26,6 +71,60 @@
     display: inline-block;
     position: relative;
     padding: 0;
+  }
+
+  .HeroNavItem {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .HeroNavItem p {
+    margin: 0;
+    padding: 0 50px;
+    font-size: 1.6rem;
+  }
+
+  .HeroNavItem p::before {
+    display: none;
+  }
+
+  .HeroNavItem p::after {
+    display: block;
+    position: absolute;
+    content: ' ';
+    background-color: rgba(255, 255, 255, 0.753);
+    height: 2px;
+    width: 30%;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+  }
+
+  .HeroNavItem p:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 40px white;
+    animation: mouse-over 0.2s;
+  }
+
+  @keyframes mouse-over {
+    0% {
+      transform: scale(1);
+      text-shadow: 0 0 0px white;
+    }
+    50% {
+      text-shadow: 0 0 60px white;
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  .HeroNavItem .ABOUT {
+    padding-left: 50px;
+  }
+
+  .HeroNavItem .SKILLS {
+    padding-left: 50px;
   }
 
   .NavItem p {
@@ -63,6 +162,15 @@
   .JPlummer:hover {
     border: none !important;
   }
+
+  .HeroNavItem p {
+    font-size: 2rem;
+  }
+
+  .HeroNavItem .PROJECTS {
+    font-size: 2.5rem;
+    padding: 0 80px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -71,6 +179,23 @@
   }
   .JPlummer {
     font-size: 1.8rem !important;
+  }
+  .HeroNavItem p {
+    font-size: 2.2rem;
+  }
+  .HeroNavItem .PROJECTS {
+    font-size: 3rem;
+    padding: 0 120px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .HeroNavItem p {
+    font-size: 2.5rem;
+  }
+  .HeroNavItem .PROJECTS {
+    font-size: 3.5em;
+    padding: 0 180px;
   }
 }
 

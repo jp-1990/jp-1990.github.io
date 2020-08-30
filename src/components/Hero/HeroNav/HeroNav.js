@@ -1,9 +1,8 @@
 import React from 'react';
-import NavItems from '../../Nav/NavItems/NavItems';
-import classes from './HeroNav.module.css';
+import Toolbar from '../../Nav/Toolbar/Toolbar';
 
 const heroNav = () => {
-  return <></>;
+  return <Toolbar location='hero' />;
 };
 
 export default heroNav;

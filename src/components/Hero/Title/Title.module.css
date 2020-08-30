@@ -5,7 +5,7 @@
   align-items: center;
   margin-bottom: 10%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -37,6 +37,7 @@
 @media screen and (min-width: 590px) {
   .Title {
     width: 380px;
+    top: 40%;
   }
 
   .h2::after {

@@ -10,7 +10,10 @@ const navItem = (props) => {
     });
   };
   return (
-    <li className={classes.NavItem} onClick={scrollHandler}>
+    <li
+      className={classes[props.styles] || classes.NavItem}
+      onClick={scrollHandler}
+    >
       <p className={classes[props.children]}>{props.children}</p>
     </li>
   );

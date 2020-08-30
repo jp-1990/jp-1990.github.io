@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavItems from '../NavItems/NavItems';
 import classes from './Toolbar.module.css';
 
-const Toolbar = () => {
+const Toolbar = (props) => {
   const [scrolled, setScrolled] = useState(false);
   const [widthHeight, setWidthHeight] = useState([
     window.innerWidth,
@@ -55,32 +55,13 @@ const Toolbar = () => {
   };
 
   const output = () => {
-    if (widthHeight[0] < 426) {
+    if (props.location === 'hero') {
       return (
-        <div
-          id='toolbar'
-          className={
-            scrolled
-              ? `${classes.Toolbar} ${classes.Default}`
-              : `${classes.Toolbar} ${classes.Hide}`
-          }
-        >
-          <div className={scrolled ? classes.Menu : classes.None}>
-            <div className={classes.Container} onClick={toggleMenuHandler}>
-              <div
-                className={
-                  menuState === 'open'
-                    ? `${classes.Hamburger} ${classes.MenuOpen}`
-                    : classes.Hamburger
-                }
-              ></div>
-            </div>
-          </div>
-          <nav
-            className={menuState === 'open' ? null : classes.None}
-            onClick={toggleMenuHandler}
-          >
+        <div className={classes.HeroToolbar}>
+          <nav className={classes.HeroNav}>
             <NavItems
+              styles='HeroNavItem'
+              location={props.location}
               yValues={{
                 projects: projectsY,
                 about: aboutY,
@@ -90,20 +71,63 @@ const Toolbar = () => {
           </nav>
         </div>
       );
+    } else if (widthHeight[0] < 426) {
+      return (
+        <header>
+          <div
+            id='toolbar'
+            className={
+              scrolled
+                ? `${classes.Toolbar} ${classes.Default}`
+                : `${classes.Toolbar} ${classes.Hide}`
+            }
+          >
+            <div className={scrolled ? classes.Menu : classes.None}>
+              <div className={classes.Container} onClick={toggleMenuHandler}>
+                <div
+                  className={
+                    menuState === 'open'
+                      ? `${classes.Hamburger} ${classes.MenuOpen}`
+                      : classes.Hamburger
+                  }
+                ></div>
+              </div>
+            </div>
+            <nav
+              className={menuState === 'open' ? null : classes.None}
+              onClick={toggleMenuHandler}
+            >
+              <NavItems
+                yValues={{
+                  projects: projectsY,
+                  about: aboutY,
+                  skills: skillsY,
+                }}
+              />
+            </nav>
+          </div>
+        </header>
+      );
     } else {
       return (
-        <div className={scrolled ? classes.Toolbar : classes.Hide}>
-          <nav>
-            <NavItems
-              yValues={{ projects: projectsY, about: aboutY, skills: skillsY }}
-            />
-          </nav>
-        </div>
+        <header>
+          <div className={scrolled ? classes.Toolbar : classes.Hide}>
+            <nav>
+              <NavItems
+                yValues={{
+                  projects: projectsY,
+                  about: aboutY,
+                  skills: skillsY,
+                }}
+              />
+            </nav>
+          </div>
+        </header>
       );
     }
   };
 
-  return <header>{output()}</header>;
+  return output();
 };
 
 export default Toolbar;

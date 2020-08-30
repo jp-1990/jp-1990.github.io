@@ -10,6 +10,24 @@
   z-index: 100;
 }
 
+.HeroToolbar {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.664);
+  z-index: 100;
+}
+
+.HeroNav {
+  width: auto;
+  height: auto;
+}
+
 .Menu {
   position: absolute;
   top: 0;
@@ -254,6 +272,10 @@
     background-color: #333;
     animation: toolbar 0.3s;
     z-index: 100;
+  }
+
+  .HeroToolbar {
+    top: 65%;
   }
 
   nav {
