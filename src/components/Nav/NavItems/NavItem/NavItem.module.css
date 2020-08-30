@@ -1,29 +1,73 @@
 .NavItem {
   display: inline-block;
-  padding: 0;
-  margin: 0px 20px;
-  font-size: 1.5rem;
 }
 
 .NavItem p {
-  margin: 12px 0 5px 0;
-  padding: 0 0 3px 0;
+  margin: 0;
+  padding: 25px 0;
   text-decoration: none;
   color: white;
   font-weight: 300;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  font-size: 1.8rem;
 }
 
 .NavItem p:hover {
   cursor: pointer;
-  border-bottom: 1px solid white;
 }
 
 .JPlummer {
-  font-family: 'Bilbo Swash Caps', cursive;
-  font-style: italic;
-  font-size: 2rem !important;
+  display: none;
+  padding: 0;
 }
 
-.JPlummer:hover {
-  border: none !important;
+@media screen and (min-width: 1024px) {
+  .NavItem {
+    display: inline-block;
+    padding: 0;
+    margin: 0px 20px;
+  }
+
+  .NavItem p {
+    margin: 12px 0 5px 0;
+    padding: 0 0 3px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  .NavItem p:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+
+  .JPlummer {
+    display: flex;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-style: italic;
+    font-size: 1.6rem !important;
+  }
+
+  .JPlummer:hover {
+    border: none !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .NavItem p {
+    font-size: 1.5rem;
+  }
+  .JPlummer {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .NavItem p {
+    font-size: 2rem;
+  }
+  .JPlummer {
+    font-size: 2.2rem !important;
+  }
 }
