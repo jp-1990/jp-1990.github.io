@@ -74,6 +74,9 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .h1 {
+    font-size: 2.8rem;
+  }
   .Skills .Overview {
     font-size: 1.3rem;
   }
