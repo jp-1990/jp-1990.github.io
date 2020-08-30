@@ -5,7 +5,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(31, 31, 31, 0.95);
   animation: drop-down 0.5s;
   z-index: 100;
 }
@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(31, 31, 31);
   height: 60px;
   width: 100%;
   animation: drop-down 0.5s, fade-in 0.5s;

@@ -5,7 +5,7 @@ const navItem = (props) => {
   const scrollHandler = () => {
     window.scroll({
       left: 0,
-      top: props.y - 40,
+      top: props.y - 60,
       behavior: 'smooth',
     });
   };
