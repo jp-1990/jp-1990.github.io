@@ -7,14 +7,21 @@
   user-select: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 426px) {
   .NavItems {
     height: 60px;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     user-select: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .NavItems {
+    justify-content: space-evenly;
   }
 }
