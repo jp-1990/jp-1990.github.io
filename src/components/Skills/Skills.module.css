@@ -26,7 +26,6 @@
   line-height: 150%;
   word-spacing: 0.1rem;
   color: rgb(70, 70, 70);
-  text-shadow: 1px 1px 1px rgba(182, 182, 182, 0.562);
 }
 
 .Skills h2 {
@@ -73,12 +72,12 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .h1 {
     font-size: 2.8rem;
   }
   .Skills .Overview {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -112,16 +111,19 @@
     transform: translateY(-50%);
     border-radius: 5px;
   }
+  .Skills .Overview {
+    margin-bottom: 50px;
+  }
 
   .Skills button {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .Skills .Overview {
-    font-size: 1.5rem;
-    margin: 20px 0;
+    font-size: 1.4rem;
+    margin: 0 0 50px 0;
     max-width: 1000px;
   }
 
