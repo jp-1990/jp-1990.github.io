@@ -6,10 +6,13 @@ const ProjectImage = (props) => {
     return <li key={`${el}${index}`}>{el.toUpperCase()}</li>;
   });
 
-  //console.log(techList);
   return (
     <div className={classes.Image}>
-      <img src={props.image} alt={props.title} />
+      <img
+        className={props.side === 'left' ? classes.L : classes.R}
+        src={props.image}
+        alt={props.title}
+      />
       <ul className={props.side === 'left' ? classes.L : classes.R}>
         {techList}
       </ul>
