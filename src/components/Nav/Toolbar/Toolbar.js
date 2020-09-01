@@ -11,6 +11,7 @@ const Toolbar = (props) => {
   const [projectsY, setProjectsY] = useState();
   const [aboutY, setAboutY] = useState();
   const [skillsY, setSkillsY] = useState();
+  const [contactY, setContactY] = useState();
   const [menuState, setMenuState] = useState('closed');
 
   useEffect(() => {
@@ -25,6 +26,7 @@ const Toolbar = (props) => {
     setProjectsY(document.getElementById('Projects').offsetTop);
     setAboutY(document.getElementById('About').offsetTop);
     setSkillsY(document.getElementById('Skills').offsetTop);
+    setContactY(document.getElementById('Contact').offsetTop);
   }, [widthHeight]);
 
   useEffect(() => {
@@ -102,6 +104,7 @@ const Toolbar = (props) => {
                   projects: projectsY,
                   about: aboutY,
                   skills: skillsY,
+                  contact: contactY,
                 }}
               />
             </nav>
@@ -118,6 +121,7 @@ const Toolbar = (props) => {
                   projects: projectsY,
                   about: aboutY,
                   skills: skillsY,
+                  contact: contactY,
                 }}
               />
             </nav>

@@ -24,6 +24,7 @@ const navItems = (props) => {
         <NavItem y={props.yValues.projects}>PROJECTS</NavItem>
         <NavItem y={props.yValues.about}>ABOUT</NavItem>
         <NavItem y={props.yValues.skills}>SKILLS</NavItem>
+        <NavItem y={props.yValues.contact}>CONTACT</NavItem>
       </ul>
     );
   }
