@@ -25,7 +25,7 @@ const projects = (props) => {
     },
     {
       title: 'Portfolio',
-      subtitle: 'Consolidating React knowledge',
+      subtitle: 'Consolidating React',
       description: `At this point I was part way through a React course, and felt it would be beneficial to use the technology in order to solidify the concepts I had learnt. I also did not have a portfolio, and to make efficient use of my time, I decided to tackle both of these tasks in unison. \n \n //Hosted on GitHub Pages`,
       technologies: ['html', 'css', 'javascript', 'react'],
       image: portfolioIMG,
